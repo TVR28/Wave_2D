@@ -69,7 +69,6 @@ int main( int argc, char *argv[] ) {
 
   // time = 1
   // calculate z[1][][], cells not on edge
-  // IMPLEMENT BY YOURSELF !!!
   #pragma omp parallel for
   for( int i = 1; i < size-1; i++){
     for( int j = 1; j < size-1; j++){
@@ -89,7 +88,6 @@ int main( int argc, char *argv[] ) {
   }
 
   // simulate wave diffusion from time = 2
-  // IMPLEMENT BY YOURSELF !!!
   for ( int t = 2; t < max_time; t++ ) {
     int p = t%3;
     int q = (t+2)%3;
